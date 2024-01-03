@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "806790465298",
+    "project_id": "vvchatapp-a82b9",
+    "storage_bucket": "vvchatapp-a82b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806790465298:android:3a398d91a92779c39d55cb",
+        "android_client_info": {
+          "package_name": "com.chatapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQtfCPt9_7jj_O43fpadpmhT_QF5orO44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806790465298:android:bfbb4819b967b7a79d55cb",
+        "android_client_info": {
+          "package_name": "com.moviesapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQtfCPt9_7jj_O43fpadpmhT_QF5orO44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
