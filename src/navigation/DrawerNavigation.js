@@ -2,7 +2,7 @@ import {View, Text} from 'react-native';
 import React from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import Main from '../screens/Main';
-import Home from '../screens/Home';
+import Home from '../screens/ShopingDrawer';
 import { useNavigation } from '@react-navigation/native';
 import CustomDrawer from '../screens/CustomDrawer';
 

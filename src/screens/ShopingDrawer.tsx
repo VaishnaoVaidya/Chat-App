@@ -9,7 +9,7 @@ import Separator from '../components/Seperator';
 import {PRODUCTS_LIST} from '../data/constants';
 
 
-type HomeProps = NativeStackScreenProps<RootStackParamList, 'Home'>
+type HomeProps = NativeStackScreenProps<RootStackParamList, 'ShopingDrawer'>
 
 const Home =({navigation} : HomeProps )  => {
   return (

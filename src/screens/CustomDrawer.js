@@ -1,7 +1,6 @@
 import {View, Text, TouchableOpacity, Image, StyleSheet} from 'react-native';
 import React from 'react';
 import {useNavigation} from '@react-navigation/native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const CustomDrawer = () => {
   const navigation = useNavigation();
@@ -13,26 +12,25 @@ const CustomDrawer = () => {
       <TouchableOpacity
         style={styles.tab}
         onPress={() => {
-          navigation.navigate('Home');
+          navigation.navigate('ShopingDrawer');
         }}>
         <Image
           source={require('../images/home.png')}
           style={[styles.tabIcon]}
         />
         <Text style={{fontSize: 20, fontWeight: 'bold' , marginVertical: 25, marginTop: 25, color: '#192A56' }}>Shoping</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> 
       <TouchableOpacity
         style={styles.tab}
         onPress={() => {
-          navigation.navigate('MainScreen');
-          
+          navigation.navigate('Setting');
         }}>
         <Image
-          source={require('../images/screen.png')}
+          source={require('../images/setting.png')}
           style={[styles.tabIcon]}
         />
-         <Text style={{fontSize: 20, fontWeight: 'bold' , marginTop: 25, color: '#192A56' }}>Material Top Screen</Text>
-      </TouchableOpacity> 
+        <Text style={{fontSize: 20, fontWeight: 'bold' , marginVertical: 25, marginTop: 25, color: '#192A56' }}>Settings</Text>
+      </TouchableOpacity>
     </View>
   );
 };

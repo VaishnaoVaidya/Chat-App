@@ -8,13 +8,17 @@ import Login from '../screens/Login';
 import Chat from '../screens/Chat';
 import Details from '../screens/Details';
 import { createNativeStackNavigator  } from '@react-navigation/native-stack';
-import Home from '../screens/Home';
+import ShopingDrawer from '../screens/ShopingDrawer';
 import Parent from '../screens/Parent';
 import MainScreen from '../screens/MainScreen';
+import AddUser from '../screens/AddUser';
+import Setting from '../tabs/Setting';
 // import { AuthProvider } from '../context/authContext';
 
 export type RootStackParamList = {
-  Home: undefined;
+  ShopingDrawer: undefined;
+  Setting: undefined;
+  AddUser: undefined;
   Parent: undefined;
   Splash: undefined;
   Signup: undefined;
@@ -65,16 +69,29 @@ export default function AppNavigator() {
           }}
         />
         <Stack.Screen
-          name={'Home'}
-          component={Home}
+          name={'ShopingDrawer'}
+          component={ShopingDrawer}
           options={{
             title: 'Trending Product'
+          }}
+        />
+         <Stack.Screen
+          name={'Setting'}
+          component={Setting}
+          options={{
+            // title: 'Trending Product'
+            headerShown: true
           }}
         /> 
         <Stack.Screen
           name={'Parent'}
           component={Parent}
           options={{headerShown: false}}
+        />
+         <Stack.Screen
+          name={'AddUser'}
+          component={AddUser}
+          options={{headerShown: true}}
         /> 
       </Stack.Navigator>
       {/* </AuthProvider> */}

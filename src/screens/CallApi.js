@@ -1,7 +1,7 @@
 import {  Text, View } from 'react-native'
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchProducts } from '../components/ProductSlice';
+import { fetchProducts } from '../redux/ProductSlice';
 import { useGetDataQuery } from '../services/GetApiCall';
 
 const CallApi = () =>{
